@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.model;
 
 class Node {
     //package-private (default access modifier)

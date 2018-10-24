@@ -1,8 +1,7 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.list.ExtractedInterface;
-import edu.kis.vh.nursery.list.IntArrayStack;
-import edu.kis.vh.nursery.list.IntLinkedList;
+import edu.kis.vh.nursery.model.ExtractedInterface;
+import edu.kis.vh.nursery.model.IntLinkedList;
 
 public class DefaultCountingOutRhymer {
     //AD. 3.1.5 - pracuję na IntelliJ i nie mogłem znaleźć opcji "Generalize Declared Type".

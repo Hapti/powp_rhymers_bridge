@@ -1,9 +1,11 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.model;
 
 public class IntLinkedList implements ExtractedInterface{
 
     private Node last;
     int i;
+
+    //private static final int TOTAL = -1;
 
     @Override
     public void countIn(int in) {
@@ -48,16 +50,15 @@ public class IntLinkedList implements ExtractedInterface{
 
     private int top() {
         if (isEmpty())
-            return -1;
+            return TOTAL;
         return last.value;
     }
 
     private int pop() {
         if (isEmpty())
-            return -1;
+            return TOTAL;
         int ret = last.value;
         last = last.prev;
         return ret;
     }
-
 }

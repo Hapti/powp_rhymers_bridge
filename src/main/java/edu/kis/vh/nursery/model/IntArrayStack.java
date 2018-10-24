@@ -1,7 +1,7 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.model;
 
 public class IntArrayStack implements ExtractedInterface {
-    private static final int TOTAL = -1;
+    //private static final int TOTAL = -1;
     private static final int NUMBERS_COUNT = 12;
     private static final int FULL_NUMBER = 11;
 
