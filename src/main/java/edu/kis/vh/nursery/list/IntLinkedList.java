@@ -1,11 +1,38 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
+public class IntLinkedList implements ExtractedInterface{
 
     private Node last;
     int i;
 
-    public void push(final int i) {
+    @Override
+    public void countIn(int in) {
+        push(in);
+    }
+
+    @Override
+    public boolean callCheck() {
+        return isEmpty();
+    }
+
+    @Override
+    public int peekaboo(){
+        return top();
+    }
+
+    @Override
+    public int countOut() {
+        return pop();
+    }
+
+    @Override
+    public boolean isFull() {
+        return false;
+    }
+
+
+    //those methods can (and even should) be renamed and override the interface methods
+    private void push(final int i) {
         if (last == null)
             last = new Node(i);
         else {
@@ -19,17 +46,13 @@ public class IntLinkedList {
         return last == null;
     }
 
-    public boolean isFull() {
-        return false;
-    }
-
-    public int top() {
+    private int top() {
         if (isEmpty())
             return -1;
         return last.value;
     }
 
-    public int pop() {
+    private int pop() {
         if (isEmpty())
             return -1;
         int ret = last.value;
